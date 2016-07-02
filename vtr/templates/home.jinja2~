@@ -1,0 +1,35 @@
+{% extends 'layout.jinja2' %}
+
+{% block main %}
+<div class="jumbotron">
+  <h1>Virtual Online Shopping KEC</h1>
+  <p>...</p>
+  <h2>Grey Sweater</h2>
+  <img src="../static/index1.jpeg" alt="grey sweater" style="width:225px;height:225px;">
+  <p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('get_image') }}" role="button">Try This</a>
+    <a class="btn btn-primary btn-lg" href="{{url_for('body_detect_and_dress') }}" role="button">See</a>
+  </p>
+  <h2>Black Half Sweater With Skeleton Pattern</h2>
+  <img src="../static/grey.jpg" alt="black t-shirt" style="width:245px;height:245px;">
+  <p>
+  <p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('get_image') }}" role="button">Try This</a>
+    <a class="btn btn-primary btn-lg" href="{{url_for('body_detect_and_dress') }}" role="button">See</a>
+  </p>
+  <h2>Black T-shirt with Print</h2>
+  <img src="../static/only.jpg" alt="black print t-shirt" style="width:225px;height:225px;">
+  <p>
+  <p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('get_image') }}" role="button">Try This</a>
+    <a class="btn btn-primary btn-lg" href="{{url_for('body_detect_and_dress') }}" role="button">See</a>
+  </p>
+  <h2>Superman T-shirt</h2>
+  <img src="../static/super.jpg" alt="blue superman" style="width:219px;height:230px;">
+  <p>
+  <p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('get_image') }}" role="button">Try This</a>
+    <a class="btn btn-primary btn-lg" href="{{url_for('body_detect_and_dress') }}" role="button">See</a>
+  </p>
+</div>
+{% endblock %}
